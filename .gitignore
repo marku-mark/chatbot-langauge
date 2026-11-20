@@ -3,3 +3,9 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 .env
+
+# Local Battlefront chatbot skills, agents, graph output, and references
+/.agents/skills/
+/.codex/agents/
+/.chatbot-toolkit/references/
+/graphify-out/

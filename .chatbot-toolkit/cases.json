@@ -1,0 +1,32 @@
+[
+  {
+    "id": "en-store-location",
+    "language": "en",
+    "messages": ["Where can I visit the Battlefront store in Sagay?"]
+  },
+  {
+    "id": "tl-mixed-product",
+    "language": "tl",
+    "messages": ["Mayroon ba kayong wireless keyboard na pang-office?"]
+  },
+  {
+    "id": "ceb-store-location",
+    "language": "ceb",
+    "messages": ["Asa mo dapit sa Sagay?"]
+  },
+  {
+    "id": "hil-store-location",
+    "language": "hil",
+    "messages": ["Diin kamo dampi sa Sagay?"]
+  },
+  {
+    "id": "en-short-ambiguous",
+    "language": "en",
+    "messages": ["Barato?"]
+  },
+  {
+    "id": "hil-language-preference",
+    "language": "hil",
+    "messages": ["Reply in Hiligaynon.", "Where is the Sagay store?", "What time does it open?"]
+  }
+]
