@@ -1,0 +1,13 @@
+[mcp_servers.chatbot-toolkit]
+command = "uv"
+args = ["run", "--no-project", "--with", "mcp==1.27.0", "python", ".chatbot-toolkit/mcp_server.py"]
+cwd = "."
+startup_timeout_sec = 30
+tool_timeout_sec = 45
+
+[mcp_servers.capstone-boost]
+command = "php"
+args = ["artisan", "boost:mcp", "--no-interaction"]
+cwd = "../battlefront-capstone"
+enabled_tools = ["application-info", "search-docs"]
+startup_timeout_sec = 20

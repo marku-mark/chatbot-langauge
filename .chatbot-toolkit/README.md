@@ -13,7 +13,16 @@ graphify query 'chatbot test_chatbot_forwards_the_message_and_context_as_a_guest
 graphify query 'ChatbotLanguage EvaluateChatbot' --graph ../battlefront-capstone/graphify-out/graph.json
 ```
 
-Run the first two commands again after source changes. They build the local code graph and HTML without model labeling. The scan includes `app/`, `tests/`, and the evaluator and its tests in `.chatbot-toolkit/`. Keep the sibling capstone graph separate.
+Run the first two commands again after source changes. They build the local graph and HTML without model labeling. Graphify follows the checkout's ignore rules. Keep the sibling capstone graph separate.
+
+## Codex MCP
+
+Open Codex from this project root. Its project config declares two local MCP connections:
+
+- `chatbot-toolkit` searches either existing Graphify index, validates synthetic cases, summarizes offline reports, and points to the Laravel entry points for improving chatbot behavior. It runs with an isolated MCP SDK through `uv`.
+- `capstone-boost` uses the existing Laravel Boost server in the adjacent `battlefront-capstone` checkout. It exposes application information and Laravel documentation search. It requires `php` on `PATH` and the capstone's Composer dependencies.
+
+Start a new Codex session after editing the MCP configuration. For example, ask Codex to trace `ChatbotLanguage` in the capstone graph and identify which offline case would demonstrate a Hiligaynon routing issue.
 
 ## Offline evaluation
 
